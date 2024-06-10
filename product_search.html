@@ -11,7 +11,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="#">Northwind Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,6 +29,33 @@
         </div>
     </nav>
 
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/premium-vector/online-grocery-store-shopping-concept-with-mobile-phone-with-card-slot-shopping-icons-backing-onto-fully-stocked-store-with-assistant-counter-colorful-cartoon-vector-illustration_118813-134.jpg"
+                    class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.the-future-of-commerce.com/wp-content/uploads/2020/12/FCEE080_OnlineGroceries_HB-1200x630.jpg"
+                    class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1331118848/video/shopping-animation-with-mobile-phone-realistic-modern-smart-phone-online-shopping-gifts.jpg?s=640x640&k=20&c=K-YwrGNMYyDLX5BZFnRQOm0Xh4N5NfLibmxz-93eW4I="
+                    class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <div class="container mt-5 text-center">
         <h1>Product Search</h1>
 
@@ -44,7 +71,7 @@
         <div id="categoryDropdown" style="display: none;" class="mb-3">
             <label for="categoryDDL" class="form-label">Select Category:</label>
             <select id="categoryDDL" class="form-select">
-                <!-- Categories will be populated dynamically -->
+                <!-- Categories will be populated -->
             </select>
         </div>
 
@@ -61,7 +88,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Table rows for displaying search results will be dynamically generated here -->
+                    <!-- Table rows for displaying search results will be here -->
                 </tbody>
             </table>
         </div>
